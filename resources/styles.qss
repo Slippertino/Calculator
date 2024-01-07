@@ -1,0 +1,59 @@
+MainWindow {
+    background-color: #FFFAFA;
+    min-width: 550px;
+    min-height: 500px;
+}
+
+QPushButton {
+    border-radius: 6px;
+    border: 1px solid #000000;
+    background-color: #e9ebe6;
+}
+
+QPushButton:pressed {
+   background-color: #008000;
+}
+
+#pushDiv,#pushMult,#pushMinus,#pushAdd,#pushEval {
+    background-color: #DAA520;
+}
+
+#pushDiv:pressed,
+#pushMult:pressed,
+#pushMinus:pressed,
+#pushAdd:pressed,
+#pushEval:pressed {
+    background-color: #008000;
+}
+
+#push0,#push1,#push2,
+#push3,#push4,#push5,
+#push6,#push7,#push8,
+#push9,#pushDot,#pushClear,
+#pushBracket,#pushMod {
+    background-color: #C0C0C0;
+}
+
+#push0:pressed,
+#push1:pressed,
+#push2:pressed,
+#push3:pressed,
+#push4:pressed,
+#push5:pressed,
+#push6:pressed,
+#push7:pressed,
+#push8:pressed,
+#push9:pressed,
+#pushDot:pressed,
+#pushClear:pressed,
+#pushBracket:pressed,
+#pushMod:pressed {
+    background-color: #008000;
+}
+
+#editExpression {
+    background-color: #DCDCDC;
+    border-radius: 8px;
+    border: 4px solid #C0C0C0;
+}
+
