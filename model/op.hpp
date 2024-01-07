@@ -11,6 +11,7 @@ namespace calculator {
 struct computable {
     using result_type = std::pair<number_t, status_type>;
     virtual result_type exec(const std::vector<number_t>& args) const = 0;
+    virtual ~computable() = default;
 };
 
 class constant final : public computable {
@@ -72,6 +73,8 @@ public:
      
         return { res, status };
     }
+
+    virtual ~operation() = default;
 
 protected:
     virtual result_type  exec_impl(const std::vector<number_t> &args) const = 0;

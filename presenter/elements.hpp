@@ -87,6 +87,8 @@ public:
 
     virtual QString toString(bool delims = true) const;
     virtual BlockPtr clone() const;
+    
+    virtual ~Block() = default;
 
 protected:
     void update(const QString& s);
